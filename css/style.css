@@ -1,0 +1,47 @@
+header nav {
+  display: flex !important;
+}
+header nav a {
+  width: 20%;
+}
+header nav a img {
+  height: 2.5rem;
+  padding: 0;
+}
+header nav a:hover {
+  color: #F4462F !important;
+}
+header nav ul {
+  margin: 0;
+  width: 50%;
+}
+header nav ul a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #00415D;
+}
+header nav .call-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: inherit;
+}
+header nav .call-box span i {
+  font-size: 2rem !important;
+  padding: 1.1rem;
+  background-color: #00415D;
+  color: whitesmoke;
+}
+header nav .call-box .question {
+  padding: 0.54rem 2.5rem;
+  background-color: #F4462F;
+}
+@media screen and (max-width: 992px) {
+  header nav a {
+    width: 18% !important;
+  }
+  header nav ul {
+    width: 45% !important;
+  }
+}

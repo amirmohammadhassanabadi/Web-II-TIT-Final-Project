@@ -1,0 +1,73 @@
+// Variebles
+@orange: #F4462F;
+@NavyBlue: #00415D;
+
+// Mixins
+.text-orange(){
+    color: @orange;
+}
+
+.bg-orange(){
+    background-color: @orange;
+}
+
+.NavyBlue(){
+    color: @NavyBlue;
+}
+
+header{
+    nav{
+        display: flex !important;
+        a{
+            width: 20%;
+            img{
+                height: 2.5rem;
+                padding: 0;
+            }
+            &:hover{
+                color: #F4462F !important;
+            }
+        }
+        ul{
+            margin: 0;
+            width: 50%;
+            a{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.2rem;
+                font-weight: 900;
+                .NavyBlue;
+            }
+        }
+        .call-box{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: inherit;
+            span{
+                i{
+                    font-size: 2rem !important;
+                    padding: 1.1rem;
+                    background-color: @NavyBlue;
+                    color: whitesmoke;
+                }
+            }
+            .question{
+                padding: .54rem 2.5rem;
+                .bg-orange;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    header{
+        nav{
+            a{
+                width: 18% !important;
+            }
+            ul{
+                width: 45% !important;
+            }
+        }
+    }
+}
