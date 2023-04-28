@@ -13,25 +13,131 @@
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <div class="container d-flex justify-content-start">
+            <div class="container d-flex justify-content-between justify-content-md-start">
                 <a class="navbar-brand" href="#">
                     <img src="./images/navbar logo.png" class="d-inline-block align-top" alt="">
                 </a>
-                <ul class="d-flex justify-content-between list-unstyled align-items-center">
-                    <li><a class="text-decoration-none" href="">Home</a></li>
-                    <li><a class="text-decoration-none" href="">Pages</a></li>
-                    <li><a class="text-decoration-none" href="">Blog</a></li>
-                    <li><a class="text-decoration-none" href="">Shop</a></li>
+                <ul class="d-none d-md-inline-flex justify-content-between list-unstyled align-items-center">
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Home 1</a>
+                            <a class="dropdown-item" href="#">Home 2</a>
+                            <a class="dropdown-item" href="#">Home 3</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Services</a>
+                            <a class="dropdown-item" href="#">Team</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Front-End</a>
+                            <a class="dropdown-item" href="#">Back-End</a>
+                            <a class="dropdown-item" href="#">Data Base</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Card</a>
+                            <a class="dropdown-item" href="#">Shop Awards</a>
+                            <a class="dropdown-item" href="#">Chekout</a>
+                            <a class="dropdown-item" href="#">Orders</a>
+                            <a class="dropdown-item" href="#">Popular Products</a>
+                        </div>
+                    </li>
+
                     <li><a class="text-decoration-none" href="">Contact</a></li>
                 </ul>
+                <span id="menuBarBTN">
+                    <i id="menuBarBtnIcon" class="fas fa-bars d-inline-block d-md-none"></i>
+                </span>
             </div>
-            <div class="call-box d-flex">
+            <div class="call-box d-none d-md-flex">
                 <span><i class="fas fa-comments"></i></span>
                 <div class="question text-light">
                     <span>Any Questions?</span>
                     <br>
-                    <a href="tel://+00-1234-5678" class="text-light" >+00-1234-5678</a>
+                    <a href="tel://+00-1234-5678" class="text-light">+00-1234-5678</a>
                 </div>
+            </div>
+            <div class="mobile-menu container">
+                <ul id="mobileMenu" class="d-none flex-column  list-unstyled p-1">
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Home 1</a>
+                            <a class="dropdown-item" href="#">Home 2</a>
+                            <a class="dropdown-item" href="#">Home 3</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Services</a>
+                            <a class="dropdown-item" href="#">Team</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Front-End</a>
+                            <a class="dropdown-item" href="#">Back-End</a>
+                            <a class="dropdown-item" href="#">Data Base</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Card</a>
+                            <a class="dropdown-item" href="#">Shop Awards</a>
+                            <a class="dropdown-item" href="#">Chekout</a>
+                            <a class="dropdown-item" href="#">Orders</a>
+                            <a class="dropdown-item" href="#">Popular Products</a>
+                        </div>
+                    </li>
+
+                    <li><a class="text-decoration-none pl-3" href="">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
