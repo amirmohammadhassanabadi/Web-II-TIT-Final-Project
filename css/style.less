@@ -1,86 +1,164 @@
 // Variebles
 @orange: #F4462F;
 @NavyBlue: #00415D;
+@darkgray: rgb(34, 34, 34);
 
 // Mixins
-.text-orange(){
+.text-orange() {
     color: @orange;
 }
 
-.bg-orange(){
+.bg-orange() {
     background-color: @orange;
 }
 
-.NavyBlue(){
+.NavyBlue() {
     color: @NavyBlue;
 }
 
-.transition(){
+.transition() {
     transition: all .4s ease-in-out;
 }
 
-header{
-    nav{
+header {
+    nav {
         display: flex !important;
-        a{
-            width: 20%;
-            img{
+
+        a {
+            width: 15%;
+
+            img {
                 height: 2.5rem;
                 padding: 0;
             }
-            &:hover{
+
+            &:hover {
                 color: #F4462F !important;
             }
         }
-        ul{
+
+        ul {
             margin: 0;
-            width: 50%;
-            a{
+            width: 45%;
+
+            a {
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 1.2rem;
                 font-weight: 900;
                 .NavyBlue;
+                padding: 0.5rem 0.4rem !important;
             }
         }
-        #menuBarBTN{
+
+        #menuBarBTN {
             cursor: pointer;
-            i{
+
+            i {
                 color: @NavyBlue;
                 .transition;
-                &:hover{
+
+                &:hover {
                     color: @orange;
                 }
             }
         }
-        .call-box{
+
+        .call-box {
             position: fixed;
             top: 0;
             right: 0;
             height: inherit;
-            span{
-                i{
+
+            span {
+                i {
                     font-size: 2rem !important;
                     padding: 1.1rem;
                     background-color: @NavyBlue;
                     color: whitesmoke;
                 }
             }
-            .question{
-                padding: .54rem 2.5rem;
+
+            .question {
+                padding: .54rem 1.5rem;
                 .bg-orange;
+            }
+        }
+    }
+
+    #carouselExampleCaptions {
+        .carousel-caption-wrapper {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 40%;
+            text-align: center;
+            color: aliceblue;
+            h1 {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: .5rem;
+                font-weight: 200;
+                color: rgb(202, 202, 202);
+            }
+        }
+
+        .carousel-control-wrapper {
+            position: absolute;
+            bottom: -15%;
+            left: -15%;
+            background-color: @darkgray;
+            width: 25%;
+            height: 50%;
+            border-radius: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 0;
+            border: 2px solid @orange;
+
+            .carousel-control-prev {
+                position: static;
+                display: inline-block;
+                // left: 10rem !important;
+                // right: 0 !important;
+            }
+
+            .carousel-control-next {
+                position: static;
+                display: inline-block;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        header {
+            nav {
+                a {
+                    width: 12% !important;
+                }
+
+                ul {
+                    width: 25% !important;
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 992px){
-    header{
-        nav{
-            a{
-                width: 18% !important;
+@media screen and (min-width: 768px) {
+    #carouselExampleCaptions {
+        .carousel-caption-wrapper {
+            h1 {
+                font-size: 3rem !important;
+                font-weight: 700;
             }
-            ul{
-                width: 45% !important;
+
+            p {
+                font-size: 1.5rem !important;
+                font-weight: 200;
             }
         }
     }
