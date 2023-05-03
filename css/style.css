@@ -92,7 +92,7 @@ main .sponser-wrapper h1 {
 }
 main .services-section .row .col-lg-12 .section-title {
   text-align: center;
-  margin: 4.5rem;
+  margin: 4.5rem !important;
 }
 main .services-section .row .col-lg-12 .section-title h2 {
   font-size: 3rem;
@@ -101,6 +101,71 @@ main .services-section .row .col-lg-12 .section-title h2 {
 }
 main .services-section .row .col-lg-12 .section-title img {
   margin: 1rem auto;
+}
+main .services-section .row2 {
+  margin-bottom: 15rem;
+}
+main .services-section .row2 .services-1-wrapper,
+main .services-section .row2 .services-2-wrapper,
+main .services-section .row2 .services-3-wrapper {
+  position: relative;
+}
+main .services-section .row2 .services-1-wrapper div.text-center,
+main .services-section .row2 .services-2-wrapper div.text-center,
+main .services-section .row2 .services-3-wrapper div.text-center {
+  width: 100%;
+  background-color: #F4462F;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+main .services-section .row2 .services-1-wrapper div.text-center h1,
+main .services-section .row2 .services-2-wrapper div.text-center h1,
+main .services-section .row2 .services-3-wrapper div.text-center h1 {
+  padding: 2rem 0;
+  margin-bottom: 10rem;
+  color: whitesmoke;
+}
+main .services-section .row2 .services-1-wrapper div.text-center div,
+main .services-section .row2 .services-2-wrapper div.text-center div,
+main .services-section .row2 .services-3-wrapper div.text-center div {
+  max-width: 80%;
+  position: absolute;
+  bottom: -10rem;
+  right: 0.9rem;
+  background-color: #f8f8f8 !important;
+  padding-bottom: 2rem !important;
+}
+main .services-section .row2 .services-1-wrapper div.text-center div img,
+main .services-section .row2 .services-2-wrapper div.text-center div img,
+main .services-section .row2 .services-3-wrapper div.text-center div img {
+  width: 100%;
+}
+main .services-section .row2 .services-1-wrapper div.text-center div h3,
+main .services-section .row2 .services-2-wrapper div.text-center div h3,
+main .services-section .row2 .services-3-wrapper div.text-center div h3 {
+  padding: 1rem 1rem 0 1rem;
+  color: #F4462F;
+}
+main .services-section .row3 .service-footer h2 {
+  color: #00415D;
+}
+main .services-section .row3 .service-footer p {
+  color: #455359;
+}
+main .services-section .row3 .service-footer button {
+  padding: 1rem 2rem;
+  border: 2px solid #F4462F;
+  background-color: #fff;
+  border-radius: 10%;
+  margin: 3rem 0 8rem 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #F4462F;
+  transition: all 0.4s ease-in-out;
+}
+main .services-section .row3 .service-footer button:hover {
+  background-color: #F4462F;
+  color: whitesmoke;
 }
 main .consult-section {
   width: 100%;
@@ -189,6 +254,28 @@ main .consult-section::after {
   }
   main .sponser-wrapper h1 {
     font-size: 1.5em;
+  }
+  main .row2 {
+    margin-bottom: 5rem !important;
+  }
+  main .row2 .services-1-wrapper,
+  main .row2 .services-2-wrapper,
+  main .row2 .services-3-wrapper {
+    margin-bottom: 15rem !important;
+  }
+  main .row2 .services-1-wrapper .text-center div,
+  main .row2 .services-2-wrapper .text-center div,
+  main .row2 .services-3-wrapper .text-center div {
+    bottom: -15rem !important;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .row .services-1-wrapper div.text-center div,
+  .row .services-2-wrapper div.text-center div,
+  .row .services-3-wrapper div.text-center div {
+    max-width: 88% !important;
+    bottom: -7rem !important;
+    background-color: aqua !important;
   }
 }
 @media screen and (min-width: 768px) {
