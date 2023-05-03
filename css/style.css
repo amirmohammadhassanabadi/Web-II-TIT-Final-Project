@@ -90,6 +90,96 @@ header #carouselExampleCaptions .carousel-control-wrapper .carousel-control-next
 main .sponser-wrapper h1 {
   color: #F4462F;
 }
+main .services-section .row .col-lg-12 .section-title {
+  text-align: center;
+  margin: 4.5rem;
+}
+main .services-section .row .col-lg-12 .section-title h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00415D;
+}
+main .services-section .row .col-lg-12 .section-title img {
+  margin: 1rem auto;
+}
+main .consult-section {
+  width: 100%;
+  background-color: #f6f9ff;
+  overflow: hidden;
+  position: relative;
+}
+main .consult-section .container {
+  padding: 5rem 0;
+}
+main .consult-section .container .row {
+  justify-content: space-between;
+}
+main .consult-section .container .row .col-lg-5 {
+  margin-bottom: 6rem;
+}
+main .consult-section .container .row .col-lg-5 consult-img {
+  position: relative;
+  text-align: center;
+}
+main .consult-section .container .row .col-lg-5 .img-meta {
+  position: absolute;
+  right: 1.9rem;
+  bottom: -6rem;
+  background: #F4462F;
+  width: fit-content;
+  float: right;
+  padding: 0.5rem 3rem;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  z-index: 0;
+  color: whitesmoke;
+}
+main .consult-section .container .row .col-lg-7 .consult-text {
+  margin: 0 auto;
+  max-width: 85%;
+}
+main .consult-section .container .row .col-lg-7 .consult-text h1 {
+  margin-bottom: 2rem;
+}
+main .consult-section .container .row .col-lg-7 .consult-text p {
+  line-height: 25px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+main .consult-section .container .row .col-lg-7 .consult-text button {
+  padding: 0.9rem 1.3rem;
+  border: 2px solid #F4462F;
+  border-radius: 5%;
+  background-color: #f6f9ff;
+  color: #F4462F;
+  transition: all 0.4s ease-in-out;
+}
+main .consult-section .container .row .col-lg-7 .consult-text button:hover {
+  background-color: #F4462F;
+  color: #f6f9ff;
+}
+main .consult-section::before {
+  background: url(../images/tp1.png) no-repeat left top;
+  width: 20%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+main .consult-section::after {
+  background: url(../images/tp2.png) no-repeat right bottom;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 20%;
+  height: 100%;
+  z-index: 0;
+  background-size: contain;
+}
 @media screen and (max-width: 768px) {
   header nav a {
     width: 12% !important;
