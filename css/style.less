@@ -64,7 +64,7 @@ header {
         }
 
         .call-box {
-            position: fixed;
+            position: absolute;
             top: 0;
             right: 0;
             height: inherit;
@@ -93,6 +93,7 @@ header {
             width: 40%;
             text-align: center;
             color: aliceblue;
+
             h1 {
                 font-size: 1rem;
                 font-weight: 700;
@@ -132,17 +133,33 @@ header {
             }
         }
     }
+}
 
-    @media screen and (max-width: 992px) {
-        header {
-            nav {
-                a {
-                    width: 12% !important;
-                }
+main {
+    .sponser-wrapper {
+        h1 {
+            color: @orange;
+        }
+    }
+}
 
-                ul {
-                    width: 25% !important;
-                }
+@media screen and (max-width:768px) {
+    header {
+        nav {
+            a {
+                width: 12% !important;
+            }
+
+            ul {
+                width: 25% !important;
+            }
+        }
+    }
+
+    main {
+        .sponser-wrapper {
+            h1 {
+                font-size: 1.5em;
             }
         }
     }

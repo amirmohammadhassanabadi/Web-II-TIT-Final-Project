@@ -33,7 +33,7 @@ header nav #menuBarBTN i:hover {
   color: #F4462F;
 }
 header nav .call-box {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   height: inherit;
@@ -87,12 +87,18 @@ header #carouselExampleCaptions .carousel-control-wrapper .carousel-control-next
   position: static;
   display: inline-block;
 }
-@media screen and (max-width: 992px) {
-  header header nav a {
+main .sponser-wrapper h1 {
+  color: #F4462F;
+}
+@media screen and (max-width: 768px) {
+  header nav a {
     width: 12% !important;
   }
-  header header nav ul {
+  header nav ul {
     width: 25% !important;
+  }
+  main .sponser-wrapper h1 {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 768px) {

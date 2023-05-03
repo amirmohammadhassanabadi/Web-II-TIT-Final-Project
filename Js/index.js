@@ -8,7 +8,6 @@ window.addEventListener('resize', function () {
         menuBarBtnIcon.classList.remove('fa', 'fa-close');
     }
 })
-console.log(menuBarBtnIcon.classList);
 menuBarBtnIcon.addEventListener('click', function () {
     if (menuBarBtnIcon.classList[1] == 'fa-bars' || menuBarBtnIcon.classList[3] == 'fa-bars') {
         menuBarBtnIcon.classList.remove('fas', 'fa-bars');
@@ -19,5 +18,4 @@ menuBarBtnIcon.addEventListener('click', function () {
         menuBarBtnIcon.classList.remove('fa', 'fa-close');
         mobileMenu.classList.add('d-none');
     }
-    console.log(menuBarBtnIcon.classList);
 })
