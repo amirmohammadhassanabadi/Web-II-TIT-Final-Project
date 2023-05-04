@@ -204,15 +204,17 @@ main {
             }
         }
 
-        .row3{
-            .service-footer{
-                h2{
+        .row3 {
+            .service-footer {
+                h2 {
                     .NavyBlue();
                 }
-                p{
+
+                p {
                     color: #455359;
                 }
-                button{
+
+                button {
                     padding: 1rem 2rem;
                     border: 2px solid @orange;
                     background-color: #fff;
@@ -222,7 +224,8 @@ main {
                     font-weight: 800;
                     .text-orange();
                     .transition;
-                    &:hover{
+
+                    &:hover {
                         .bg-orange();
                         color: whitesmoke;
                     }
@@ -274,12 +277,14 @@ main {
 
                         h1 {
                             margin-bottom: 2rem;
+                            .NavyBlue;
                         }
 
                         p {
                             line-height: 25px;
                             font-size: 1.2rem;
                             margin-bottom: 2rem;
+                            color: #455359;
                         }
 
                         button {
@@ -322,6 +327,69 @@ main {
             height: 100%;
             z-index: 0;
             background-size: contain;
+        }
+    }
+
+    section.services-2-section {
+        .container {
+            .row1 {
+                .col-lg-12 {
+                    position: relative;
+                    padding: 2rem 0;
+                    margin: 3rem 0;
+
+                    h1 {
+                        .NavyBlue();
+
+                        &::after {
+                            background: url(../images/line.png) no-repeat center bottom;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            .s2-row {
+                margin: 3rem 0;
+
+                div.col-md-6 {
+                    margin-bottom: 1.5rem;
+                    padding: 0;
+                    padding: 0 .5rem;
+
+                    .wrapper {
+                        position: relative;
+                        width: 100%;
+                        overflow: hidden;
+                        border-radius: 1rem;
+                        cursor: pointer;
+                        img {
+                            overflow: hidden !important;
+                            width: 100%;
+                        }
+
+                        .go {
+                            position: absolute;
+                            bottom: -2rem;
+                            right: -1.5rem;
+                            .bg-orange();
+                            width: 8rem;
+                            height: 8rem;
+                            border-radius: 100%;
+                            color: whitesmoke;
+                            .transition;
+                            &:hover{
+                                background-color: #ff1e00;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -205,11 +205,13 @@ main .consult-section .container .row .col-lg-7 .consult-text {
 }
 main .consult-section .container .row .col-lg-7 .consult-text h1 {
   margin-bottom: 2rem;
+  color: #00415D;
 }
 main .consult-section .container .row .col-lg-7 .consult-text p {
   line-height: 25px;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #455359;
 }
 main .consult-section .container .row .col-lg-7 .consult-text button {
   padding: 0.9rem 1.3rem;
@@ -244,6 +246,56 @@ main .consult-section::after {
   height: 100%;
   z-index: 0;
   background-size: contain;
+}
+main section.services-2-section .container .row1 .col-lg-12 {
+  position: relative;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+main section.services-2-section .container .row1 .col-lg-12 h1 {
+  color: #00415D;
+}
+main section.services-2-section .container .row1 .col-lg-12 h1::after {
+  background: url(../images/line.png) no-repeat center bottom;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+main section.services-2-section .container .s2-row {
+  margin: 3rem 0;
+}
+main section.services-2-section .container .s2-row div.col-md-6 {
+  margin-bottom: 1.5rem;
+  padding: 0;
+  padding: 0 0.5rem;
+}
+main section.services-2-section .container .s2-row div.col-md-6 .wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.services-2-section .container .s2-row div.col-md-6 .wrapper img {
+  overflow: hidden !important;
+  width: 100%;
+}
+main section.services-2-section .container .s2-row div.col-md-6 .wrapper .go {
+  position: absolute;
+  bottom: -2rem;
+  right: -1.5rem;
+  background-color: #F4462F;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  color: whitesmoke;
+  transition: all 0.4s ease-in-out;
+}
+main section.services-2-section .container .s2-row div.col-md-6 .wrapper .go:hover {
+  background-color: #ff1e00;
 }
 @media screen and (max-width: 768px) {
   header nav a {
