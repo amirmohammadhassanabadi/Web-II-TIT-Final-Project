@@ -376,6 +376,7 @@ main section.review-section .container .row-2 h2 {
   font-weight: 900;
   margin-top: 6rem;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 main section.review-section .container .row-2 h2::before {
   background: url(../images/line.png) no-repeat center bottom;
