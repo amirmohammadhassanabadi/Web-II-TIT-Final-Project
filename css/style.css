@@ -305,11 +305,12 @@ main section.status-section {
   background-size: cover;
 }
 main section.status-section .container .row1 {
-  padding: 2rem 0 6rem 0;
+  padding: 2rem 0 20rem 0;
 }
 main section.status-section .container .row1 div .status-card {
   background-color: #0A5879;
   padding: 3rem 2rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
 }
 main section.status-section .container .row1 div .status-card label {
@@ -324,6 +325,67 @@ main section.status-section .container .row1 div .status-card h3 {
 }
 main section.status-section .container .row1 div .status-card p {
   color: white;
+}
+main section.review-section {
+  margin-top: -11rem;
+}
+main section.review-section .container .feature-part {
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+main section.review-section .container .feature-part .col-lg-5 {
+  padding: 0;
+}
+main section.review-section .container .feature-part .col-lg-5 .img-holder {
+  width: 100%;
+}
+main section.review-section .container .feature-part .col-lg-5 .img-holder img {
+  width: 100%;
+}
+main section.review-section .container .col-lg-7 .content {
+  width: 100%;
+  padding: 2rem;
+}
+main section.review-section .container .col-lg-7 .content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00415D;
+  margin-bottom: 2rem;
+}
+main section.review-section .container .col-lg-7 .content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+main section.review-section .container .col-lg-7 .content button {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border: 2px solid #F4462F;
+  color: #F4462F;
+  transition: all 0.4s ease-in-out;
+}
+main section.review-section .container .col-lg-7 .content button:hover {
+  background-color: #F4462F;
+  color: whitesmoke;
+}
+main section.review-section .container .row-2 h2 {
+  font-size: 2rem;
+  color: #00415D;
+  font-weight: 900;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+main section.review-section .container .row-2 h2::before {
+  background: url(../images/line.png) no-repeat center bottom;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   header nav a {
@@ -347,6 +409,15 @@ main section.status-section .container .row1 div .status-card p {
   main .row2 .services-2-wrapper .text-center div,
   main .row2 .services-3-wrapper .text-center div {
     bottom: -15rem !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  main section.review-section .container .col-lg-7 .content h2 {
+    font-size: 2rem !important;
+  }
+  main section.review-section .container .col-lg-7 .content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
