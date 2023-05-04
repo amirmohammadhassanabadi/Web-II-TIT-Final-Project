@@ -297,6 +297,34 @@ main section.services-2-section .container .s2-row div.col-md-6 .wrapper .go {
 main section.services-2-section .container .s2-row div.col-md-6 .wrapper .go:hover {
   background-color: #ff1e00;
 }
+main section.status-section {
+  width: 100%;
+  background-image: url('../images/status.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.status-section .container .row1 {
+  padding: 2rem 0 6rem 0;
+}
+main section.status-section .container .row1 div .status-card {
+  background-color: #0A5879;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+}
+main section.status-section .container .row1 div .status-card label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: whitesmoke;
+}
+main section.status-section .container .row1 div .status-card h3 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #F4462F;
+}
+main section.status-section .container .row1 div .status-card p {
+  color: white;
+}
 @media screen and (max-width: 768px) {
   header nav a {
     width: 12% !important;
