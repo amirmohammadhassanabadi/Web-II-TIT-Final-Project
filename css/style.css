@@ -409,6 +409,29 @@ main section.review-section .container .row-3 .carousel .carousel-inner .carouse
 main section.review-section .container .row-3 .carousel .carousel-inner .carousel-item .row h4 {
   color: #F4462F;
 }
+main section.faq-section {
+  background: url('../images/FAQ.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.faq-section .container .row-1 h1 {
+  color: whitesmoke;
+  position: relative;
+  padding: 2rem 0;
+  margin: 4rem 0;
+  margin-bottom: 30rem;
+}
+main section.faq-section .container .row-1 h1::before {
+  background: url(../images/line.png) no-repeat center bottom;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 @media screen and (max-width: 768px) {
   header nav a {
     width: 12% !important;
