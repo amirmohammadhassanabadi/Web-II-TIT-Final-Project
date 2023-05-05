@@ -457,7 +457,10 @@ main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card .card
 main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card .card-header h2:target {
   background-color: #F4462F;
 }
-main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card:nth-child(4) {
+main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card:nth-child(1) {
+  width: 100% !important;
+}
+main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card:nth-child(3) {
   margin-bottom: 0 !important;
 }
 main .acordion-section .container .row-2 div {
@@ -466,6 +469,7 @@ main .acordion-section .container .row-2 div {
 main .acordion-section .container .row-2 div h1 {
   position: relative;
   padding: 2rem;
+  color: #00415D;
 }
 main .acordion-section .container .row-2 div h1::before {
   background: url(../images/line.png) no-repeat center bottom;
@@ -477,11 +481,14 @@ main .acordion-section .container .row-2 div h1::before {
   height: 100%;
   z-index: 0;
 }
+main .acordion-section .container .row-3 {
+  margin-bottom: 15rem;
+}
 main .acordion-section .container .row-3 div .card {
   border-radius: 1rem;
   padding: 1rem;
   width: 100%;
-  margin-bottom: 14rem;
+  margin-bottom: 2rem;
 }
 main .acordion-section .container .row-3 div .card img {
   border-radius: 1rem;
@@ -500,6 +507,146 @@ main .acordion-section .container .row-3 div .card h3 {
 }
 main .acordion-section .container .row-3 div .card h3:hover {
   color: #F4462F;
+}
+footer {
+  background-image: url('../images/footer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-top .container {
+  position: relative;
+}
+footer .footer-top .container .row {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  border-top: 4px solid #F4462F;
+  color: #00415D;
+  top: -9.5rem;
+}
+footer .footer-top .container .row div:nth-child(1) span {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+footer .footer-top .container .row div:nth-child(2) form input {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+footer .footer-top .container .row div:nth-child(2) form input:focus {
+  border: 1px solid #F4462F;
+  outline: 0;
+}
+footer .footer-top .container .row div:nth-child(2) form button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  height: 70%;
+  border: 0;
+  color: whitesmoke;
+  background-color: #F4462F;
+  padding: 0 2rem;
+  transition: all 0.4s ease-in-out;
+}
+footer .footer-top .container .row div:nth-child(2) form button:hover {
+  background-color: #ff1e00;
+}
+footer .main-footer {
+  padding-top: 10rem;
+  color: whitesmoke;
+  margin-bottom: 2rem;
+}
+footer .main-footer .container .row .logo-wrapper .d-flex i {
+  padding: 0.8rem;
+  border: 1px solid whitesmoke;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+footer .main-footer .container .row .logo-wrapper .d-flex i:hover {
+  border: 1px solid #F4462F;
+  background-color: #F4462F;
+  color: whitesmoke;
+}
+footer .main-footer .container .row .links-wrapper h4 {
+  margin-bottom: 2rem;
+  color: #F4462F;
+}
+footer .main-footer .container .row .links-wrapper ul li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+footer .main-footer .container .row .links-wrapper ul li i {
+  margin-right: 0.5rem;
+}
+footer .main-footer .container .row .links-wrapper ul li:hover {
+  color: #F4462F !important;
+}
+footer .main-footer .container .row .contact-wrapper h4 {
+  margin-bottom: 2rem;
+  color: #F4462F;
+}
+footer .main-footer .container .row .contact-wrapper ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+footer .main-footer .container .row .contact-wrapper ul li i {
+  margin-right: 0.5rem;
+}
+footer .main-footer .container .row .contact-wrapper ul li:hover {
+  color: #F4462F;
+}
+footer .main-footer .container .row .influential h4 {
+  margin-bottom: 2rem;
+  color: #F4462F;
+}
+footer .main-footer .container .row .influential .row div {
+  margin-bottom: 1rem;
+}
+footer .main-footer .container .row .influential .row div img {
+  border-radius: 1rem;
+}
+footer .bottom-footer {
+  background-color: #011E2A;
+  padding: 1.5rem 0;
+  color: whitesmoke;
+}
+footer .bottom-footer .container span span {
+  color: #F4462F;
+}
+footer .bottom-footer .container ul {
+  margin-bottom: 0 !important;
+}
+footer .bottom-footer .container ul span {
+  margin-right: 0.5rem;
+}
+footer .bottom-footer .container ul li {
+  margin-right: 0.5rem;
+}
+footer .bottom-footer .container ul li a {
+  color: whitesmoke;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+footer .bottom-footer .container ul li a:hover {
+  color: #F4462F;
+}
+@media screen and (max-width: 992px) {
+  footer .main-footer {
+    padding-top: 15rem;
+  }
+  footer .main-footer .container .row div {
+    margin-bottom: 2rem;
+  }
+  footer .container .row .logo-wrapper .d-flex i {
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header nav a {
@@ -523,6 +670,9 @@ main .acordion-section .container .row-3 div .card h3:hover {
   main .row2 .services-2-wrapper .text-center div,
   main .row2 .services-3-wrapper .text-center div {
     bottom: -15rem !important;
+  }
+  footer .contact-wrapper ul li:nth-child(3) {
+    font-size: 1rem !important;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
