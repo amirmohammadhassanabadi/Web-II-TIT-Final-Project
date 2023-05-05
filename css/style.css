@@ -437,7 +437,7 @@ main .acordion-section .container .row-1 .col-11 .wrapper {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 2rem;
   margin-top: -15rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 main .acordion-section .container .row-1 .col-11 .wrapper .accordion {
   border: 0 !important;
@@ -459,6 +459,47 @@ main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card .card
 }
 main .acordion-section .container .row-1 .col-11 .wrapper .accordion .card:nth-child(4) {
   margin-bottom: 0 !important;
+}
+main .acordion-section .container .row-2 div {
+  margin-bottom: 5rem !important;
+}
+main .acordion-section .container .row-2 div h1 {
+  position: relative;
+  padding: 2rem;
+}
+main .acordion-section .container .row-2 div h1::before {
+  background: url(../images/line.png) no-repeat center bottom;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+main .acordion-section .container .row-3 div .card {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 14rem;
+}
+main .acordion-section .container .row-3 div .card img {
+  border-radius: 1rem;
+}
+main .acordion-section .container .row-3 div .card span {
+  background-color: #F4462F;
+  color: whitesmoke;
+  margin: 1rem 0;
+  padding: 0.5rem 0.9rem;
+  width: fit-content;
+  border-radius: 6rem;
+}
+main .acordion-section .container .row-3 div .card h3 {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+main .acordion-section .container .row-3 div .card h3:hover {
+  color: #F4462F;
 }
 @media screen and (max-width: 768px) {
   header nav a {

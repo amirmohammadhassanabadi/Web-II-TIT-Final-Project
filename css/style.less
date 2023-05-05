@@ -576,39 +576,99 @@ main {
         }
     }
 
-    .acordion-section{
-        .container{
-            .row-1{
-                .col-11{
-                    .wrapper{
+    .acordion-section {
+        .container {
+            .row-1 {
+                .col-11 {
+                    .wrapper {
                         background-color: #fff;
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         padding: 2rem;
                         margin-top: -15rem;
-                        margin-bottom: 8rem;
-                        .accordion{
+                        margin-bottom: 4rem;
+
+                        .accordion {
                             border: 0 !important;
-                            .card{
+
+                            .card {
                                 margin-bottom: 1rem;
                                 border: 0 !important;
-                                .card-header{
-                                    h2{
-                                        button{
+
+                                .card-header {
+                                    h2 {
+                                        button {
                                             .NavyBlue;
                                             font-size: 1.5rem;
-                                            &:hover{
+
+                                            &:hover {
                                                 text-decoration: none;
                                                 .text-orange();
                                             }
                                         }
-                                        &:target{
+
+                                        &:target {
                                             background-color: @orange;
                                         }
                                     }
                                 }
                             }
-                            .card:nth-child(4){
+
+                            .card:nth-child(4) {
                                 margin-bottom: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row-2 {
+                div {
+                    margin-bottom: 5rem !important;
+
+                    h1 {
+                        position: relative;
+                        padding: 2rem;
+
+                        &::before {
+                            background: url(../images/line.png) no-repeat center bottom;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            z-index: 0;
+                        }
+                    }
+                }
+            }
+
+            .row-3 {
+                div {
+                    .card {
+                        border-radius: 1rem;
+                        padding: 1rem;
+                        width: 100%;
+                        margin-bottom: 14rem;
+
+                        img {
+                            border-radius: 1rem;
+                        }
+                        
+                        span{
+                            .bg-orange();
+                            color: whitesmoke;
+                            margin: 1rem 0;
+                            padding: .5rem .9rem;
+                            width: fit-content;
+                            border-radius: 6rem;
+                        }
+
+                        h3{
+                            cursor: pointer;
+                            .transition;
+                            &:hover{
+                                .text-orange();
                             }
                         }
                     }
